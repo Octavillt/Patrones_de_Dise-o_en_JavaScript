@@ -39,11 +39,18 @@ class WeekDays {
 }
 
 // Creación de instancias de WeekDays.
-const weekDays = new WeekDays("en"); // Crea una instancia con idioma inglés.
-// const weekDays = new WeekDays("es"); // Descomentar para crear una instancia con idioma español.
-const weekDays2 = new WeekDays(); // Intenta crear una nueva instancia.
+
+// Crea una instancia con idioma inglés.
+const weekDays = new WeekDays("en");
+// Descomentar para crear una instancia con idioma español.
+// const weekDays = new WeekDays("es");
+// Intenta crear una nueva instancia.
+const weekDays2 = new WeekDays();
 
 // Pruebas de las instancias y sus métodos.
-console.log(weekDays.getDays()); // Muestra los días en inglés (o español si se cambia el idioma).
-console.log(weekDays2.getDays()); // Muestra los mismos días que 'weekDays', demostrando el Singleton.
+
+// Muestra los días en inglés (o español si se cambia el idioma).
+console.log(weekDays.getDays());
+// Muestra los mismos días que 'weekDays', demostrando el Singleton.
+console.log(weekDays2.getDays());
 // A pesar de intentar crear una nueva instancia con 'weekDays2', se obtiene la misma instancia que 'weekDays'.
